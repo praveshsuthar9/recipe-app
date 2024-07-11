@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #202020;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header-container {
+  background-color: #252525;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: orangered;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-container input {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #222;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.form-container button {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: tomato;
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.form-container button:hover {
+  background-color: transparent;
+  border: 1px solid tomato;
+  color: orangered;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.recipe-container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recipe-container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.recipe {
+  background-color: #252525;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.recipe img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.recipe h3 {
+  font-size: 18px;
+
+  color: #fff;
+  padding-top: 10px;
+}
+
+.recipe p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.recipe span {
+  font-weight: bold;
+  color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+  .header-container {
+    width: auto;
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .recipe-container h2 {
+    font-size: 20px;
+  }
+}
